@@ -1,0 +1,281 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #A9DDE8;
+    --cor-background: #FFF8EE;
+    --cor-texto: #5a3e36;
+    --cor-cards: #F6C4A8;
+    --cor-destaque: #354052;
+    --cor-botoes: #F3A6B8;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--cor-background);
+    color: var(--cor-texto);
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+
+main {
+    margin: 100px 2%;
+}
+
+h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+
+    font-family: 'Fredoka', sans-serif;
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 2px 0;
+}
+
+input:focus, button:focus, a:focus {
+    outline: 3px solid var(--cor-destaque);
+}
+
+.botao{
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+
+    background-color: var(--cor-botoes);
+}
+
+
+/* Rodape*/
+
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+
+    background-color: var(--cor-principal);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 20px;
+    
+}
+
+.rodape a{
+    text-decoration: none;
+    background-color: var(--cor-botoes);
+    color: var(--cor-texto);
+
+    padding: 10px 2em;
+    border-radius: 10px;
+    border: 1px solid  #f53764;;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    background-color: var(--cor-principal);
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 20px;
+    
+}
+
+.navegacao ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.navegacao a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.logo {
+    width: 10rem;
+}
+
+
+/* Principal */
+
+.destaques h1{
+    font-size: 3vw;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+} 
+
+.cards img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cards article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--cor-cards);
+    padding: 20px;
+    width: 20vw;
+    border-radius: 10%;
+    transition: 0.3s;
+    
+}
+
+.cards a{
+    text-decoration: none;
+    color: var(--cor-texto);
+
+}
+
+.cards article:hover{
+    transform: translateY(-5px);
+}
+
+
+/*Cardápio*/
+
+.sabores {
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    margin-top: 20px;
+} 
+
+.sabores article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    background-color: var(--cor-cards);
+    width: 20vw;
+    border-radius: 10px;
+    
+}
+
+.sabores img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.sabores a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+.cardapio h1{
+    font-size: 3vw;
+}
+
+.busca {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    border-radius: 10%;
+}
+
+.busca label{
+    flex-basis: 100%;
+}
+
+.busca input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+
+
+/* Produto */
+
+.descricao {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.detalhes img {
+    width: 30vw;
+}
+
+
+/* Login e cadastro*/
+
+.aba_login, .aba_cadastro  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 100%;
+}
+
+.login, .cadastro {
+    background-color: var(--cor-cards);
+    width: 50%;
+
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fazer_login, .fazer_cadastro{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.fazer_login input, .fazer_cadastro input{
+    display: flex;
+    min-width: 0;
+    width: 100%;
+
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.fazer_login fieldset, .fazer_cadastro fieldset{
+    border: 1px solid var(--cor-background);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.fazer_login legend, .fazer_cadastro legend{
+    font-size: 1.5rem;
+}
+
